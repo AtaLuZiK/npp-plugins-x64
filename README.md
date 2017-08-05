@@ -1,2 +1,3 @@
-# npp-plugins-x64
-Notepad++ plugins for x64
+# Notepad++ x64 Plugins
+
+This is list Notepad++ plugins for x64.
