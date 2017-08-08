@@ -1,0 +1,26 @@
+#pragma once
+
+#if @HAS_GET_WINDOW_LONG_PTR@
+#undef GetWindowLong
+#define GetWindowLong GetWindowLongPtr
+#endif
+
+#if @HAS_SET_WINDOW_LONG_PTR@
+#undef SetWindowLong
+#define SetWindowLong SetWindowLongPtr
+#endif
+
+#if @HAS_GWLP_USERDATA@
+#undef GWL_WNDPROC
+#define GWL_WNDPROC GWLP_WNDPROC
+#endif
+
+#if @HAS_GWLP_WNDPROC@
+#undef GWL_WNDPROC
+#define GWL_WNDPROC GWLP_WNDPROC
+#endif
+
+#if @HAS_GWLP_USERDATA@
+#undef GWL_USERDATA
+#define GWL_USERDATA GWLP_USERDATA
+#endif
